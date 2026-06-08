@@ -244,3 +244,12 @@ Log format:
 ## License
 
 MIT
+
+🚀 Live Demo:
+https://future-trade-bot--sakshi2622.replit.app/
+
+## GitHub Repository
+Source code for Binance Trading Bot assignment.
+
+### Run the Live App
+👉 https://future-trade-bot--sakshi2622.replit.app/
