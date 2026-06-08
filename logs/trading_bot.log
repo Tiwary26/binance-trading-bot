@@ -1,0 +1,4 @@
+2026-06-08T15:36:00 | INFO     | trading_bot.cli | CLI invoked — symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None dry_run=True
+2026-06-08T15:36:00 | ERROR    | trading_bot.cli | Missing API credentials. Aborting.
+2026-06-08T15:43:33 | INFO     | trading_bot.cli | CLI invoked — symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None dry_run=True
+2026-06-08T15:43:33 | INFO     | trading_bot.cli | Dry-run mode — no order sent.
