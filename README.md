@@ -24,6 +24,167 @@ The project focuses on automation, API communication, order management, and reli
 - Credentials via environment variables (recommended) or CLI flags
 
 ---
+## 📊 System Architecture
+
+PyAlgoBot follows a modular architecture that separates API communication, trading logic, order execution, and logging.
+
+```text
+                  ┌──────────────────────┐
+                  │      User / CLI      │
+                  └──────────┬───────────┘
+                             │
+                  ┌──────────▼───────────┐
+                  │   Trading Controller │
+                  └──────────┬───────────┘
+                             │
+              ┌──────────────▼──────────────┐
+              │     Input Validation        │
+              └──────────────┬──────────────┘
+                             │
+                  ┌──────────▼───────────┐
+                  │    Trading Engine    │
+                  └──────────┬───────────┘
+                             │
+                  ┌──────────▼───────────┐
+                  │   Binance API Client │
+                  └──────────┬───────────┘
+                             │
+                  ┌──────────▼───────────┐
+                  │  Binance Exchange   │
+                  └──────────┬───────────┘
+                             │
+                  ┌──────────▼───────────┐
+                  │ Execution & Logging │
+                  └──────────────────────┘
+```
+
+## ⚡ Core Trading Workflow
+
+1. Initialize the trading client.
+2. Load API credentials securely.
+3. Receive trading parameters.
+4. Validate symbol, quantity, and order type.
+5. Generate authenticated API requests.
+6. Submit orders to Binance.
+7. Process exchange responses.
+8. Record execution details and errors.
+
+## 📈 Trading Capabilities
+
+| Feature | Description |
+|---|---|
+| Market Orders | Execute orders at available market prices |
+| Limit Orders | Submit orders at specified prices |
+| BUY Operations | Open or increase long positions |
+| SELL Operations | Reduce or close positions |
+| API Integration | Communicate with Binance endpoints |
+| Validation | Check order parameters |
+| Logging | Track trading activities |
+
+## 🛡️ Risk Management
+
+Trading automation requires strong risk controls.
+
+Potential risk-management enhancements include:
+
+- Maximum position size.
+- Configurable stop-loss.
+- Take-profit targets.
+- Maximum daily loss limits.
+- Trade frequency restrictions.
+- Order quantity validation.
+- API failure handling.
+- Duplicate order prevention.
+
+## 🔄 Error Handling & Reliability
+
+PyAlgoBot is designed around reliable execution workflows.
+
+Important scenarios to handle:
+
+- Invalid API credentials.
+- Network connection failures.
+- Insufficient account balance.
+- Invalid trading symbols.
+- Incorrect order quantities.
+- Exchange API rate limits.
+- Rejected trading requests.
+- Unexpected API responses.
+
+## 🧪 Testing Strategy
+
+The following testing areas can help validate the system:
+
+- API connectivity testing.
+- Order parameter validation.
+- Market order execution testing.
+- Limit order execution testing.
+- Authentication testing.
+- Invalid request testing.
+- Exception handling.
+- Testnet integration testing.
+
+## 🔍 Observability & Monitoring
+
+The system can use structured logs to monitor:
+
+- API request status.
+- Order submission events.
+- Order execution responses.
+- Trading errors.
+- Execution timestamps.
+- Trading activity history.
+
+## 📌 Project Goals
+
+- Automate cryptocurrency trading workflows.
+- Simplify exchange API integration.
+- Build modular trading components.
+- Improve execution reliability.
+- Explore algorithmic trading concepts.
+- Develop a foundation for strategy-driven automation.
+
+## 🗺️ Development Roadmap
+
+- [x] Python-based project foundation
+- [x] Binance API integration
+- [x] Modular order management
+- [x] Environment-based configuration
+- [x] Basic order validation
+- [ ] Advanced trading strategies
+- [ ] Technical indicator integration
+- [ ] Automated risk management
+- [ ] Historical data backtesting
+- [ ] Real-time performance dashboard
+- [ ] Portfolio analytics
+
+*Update the completion status according to the actual implementation.*
+
+## 💡 Learning Outcomes
+
+Through this project, I explored:
+
+- REST API integration and authentication.
+- Python application architecture.
+- Automated order management.
+- Environment variable management.
+- Exception handling and debugging.
+- Financial market automation concepts.
+- Modular and maintainable software development.
+
+## 📬 Connect With Me
+
+**Sakshi Kumari**
+
+- GitHub: https://github.com/Tiwary26
+
+If you find this project useful, feel free to explore the repository and share your feedback!
+
+---
+
+<p align="center">
+  **Built with Python ❤️ for Algorithmic Trading**
+</p>
 
 ## Project Structure
 
