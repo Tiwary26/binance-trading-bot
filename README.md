@@ -3,6 +3,14 @@
 A clean, production-ready Python CLI application for placing orders on the
 [Binance Futures Testnet](https://testnet.binancefuture.com) (USDT-M perpetual futures).
 
+A Python-based automated cryptocurrency trading bot integrated with the Binance API, designed to simplify trade execution, automate trading operations, and provide a foundation for algorithmic trading strategies.
+
+🚀 Overview
+
+PyAlgoBot is an algorithmic trading project built using Python that interacts with the Binance trading platform through API integration. It aims to automate trading operations, manage orders, validate trading parameters, and streamline cryptocurrency trading workflows.
+
+The project focuses on automation, API communication, order management, and reliable execution.
+
 ---
 
 ## Features
